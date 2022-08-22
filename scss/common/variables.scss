@@ -1,0 +1,16 @@
+//============Переменные==============//
+//Применение font-size: $fz; color: $c; backraund-color: $bgc;
+$ctext: #F7F5F5;
+$ctext_2: #F03957;
+$cnav: #2E3235;
+$cfoot: #D9D9D9;
+$bg: #525252;
+$bg_2: #C4C4C4;
+$bg_3: #D4636B;
+
+//Брекпоинты 
+//Приминение @media (max-width: $breakpoint_xxl)
+$breakpoint_xxl: 1200px;
+$breakpoint_xl: 1024px;
+$breakpoint_md: 767px;
+$breakpoint_sm: 576px;

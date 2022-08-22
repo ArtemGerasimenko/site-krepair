@@ -1,0 +1,51 @@
+.header {
+	&__container {}
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 25px;
+	}
+	&__logo {}
+	&__logo-img {}
+	&__menu {
+		width: 557px;
+	}
+	&__tel {}
+	&__tel-link {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 175%;
+		letter-spacing: -0.05em;
+		color: $cnav;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+.menu {
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {}
+	&__link {
+		@extend %text;
+		color: $cnav;
+		position: relative;
+		overflow: hidden;
+		&::before {
+			content: '';
+			width: 100%;
+			height: 3px;
+			background-color: $ctext_2;
+			position: absolute;
+			bottom: 0;
+			left: -100%;
+			transition: all 0.4s ease-in-out;
+		}
+		&:hover::before {
+			left: 0;
+		}
+	}
+}
