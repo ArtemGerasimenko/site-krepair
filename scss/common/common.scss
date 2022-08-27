@@ -20,3 +20,15 @@ body{
   padding: 0 15px;
   box-sizing: content-box;
 }
+.title_h2 {
+  @extend %title_h2;
+}
+.title_h2 span {
+  color: $ctext_2;
+}
+.title_h4 {
+  @extend %title_h4;
+}
+.title_h4 span {
+  color: $ctext_2;
+}

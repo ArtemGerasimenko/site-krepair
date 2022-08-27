@@ -1,0 +1,95 @@
+.page {
+	&__advantages {
+		background-color: $ctext;
+	}
+}
+.advantages {
+	&__container {}
+	&__body {
+		padding: 120px 0;
+	}
+}
+.body-advantages {
+	&__content {
+		width: 1123px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__cards {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 80px;
+	}
+	&__card {
+		width: 367px;
+		height: 499px;
+		border-radius: 20px;
+		cursor: pointer;
+		transition: all 0.2s ease-in-out;
+		box-shadow: 0px 5px 5px #bbb;
+		&:hover {
+			box-shadow: 0px 20px 30px #777;
+		}
+		&:nth-child(1) {
+			background-color: $bg_2;
+			padding: 35px 23px 132px 28px;
+		}
+		&:nth-child(2) {
+			background-color: $bg;
+			color: #fff;
+			padding: 35px 34px 100px 30px;
+		}
+		&:nth-child(3) {
+			background-color: $bg_3;
+			color: #fff;
+			padding: 35px 34px 132px 30px;
+		}
+	}
+}
+.content-advantages {
+	&__title {
+		width: 462px;
+	}
+	&__text {
+		@extend %text;
+		width: 523px;
+		font-weight: 600;
+	}
+}
+.card-advantages {
+	&__icon {}
+	&__title {
+		@extend %title_h4;
+		line-height: 150%;
+	}
+	&__text {
+		@extend %text;
+		width: 302px;
+		margin-top: 25px;
+	}
+}
+
+#card-title-1 {
+	width: 206px;
+	margin-top: 30px;
+}
+#card-text-1 {
+	width: 314px;
+}
+
+#card-title-2 {
+	width: 271px;
+	margin-top: 37px;
+}
+#card-text-2 {
+	width: 302px;
+}
+
+#card-title-3 {
+	width: 175px;
+	margin-top: 38px;
+}
+#card-text-3 {
+	width: 302px;
+}

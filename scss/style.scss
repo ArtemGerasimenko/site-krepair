@@ -1,5 +1,10 @@
 @import "./common";
 @import "./components/header";
-@import "./components/page-mainscren";
-@import "./components/page-services";
+@import "./components/page-home/sections/mainscreen";
+@import "./components/page-home/sections/services";
+@import "./components/page-home/sections/advantages";
+@import "./components/page-home/sections/brands";
+@import "./components/page-home/sections/reviews";
+@import "./components/page-home/sections/form";
+@import "./components/page-home/sections/map";
 @import "./components/footer";

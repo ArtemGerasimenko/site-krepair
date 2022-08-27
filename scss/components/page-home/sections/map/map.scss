@@ -1,0 +1,57 @@
+.page {
+	&__map {
+		position: relative;
+		width: 100vw;
+		height: 669px;
+		background-image: url('../images/main/bg_map.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+.map {
+	&__container {
+		position: relative;
+	}
+	&__body {
+		padding: 50px 23px 50px 54px;
+		background-color: $bg;
+		width: 463px;
+		height: 323px;
+		border-radius: 15px;
+		position: absolute;
+		top: 120px;
+		left: 0;
+	}
+}
+.body-map {
+	&__content {}
+}
+.content-body-map {
+	&__logo {}
+	&__address {
+		margin-top: 33px;
+		font-size: 16px;
+		line-height: 175%;
+		letter-spacing: -0.05em;
+		color: #EFEFEF;
+	}
+	&__email {
+		margin-top: 25px;
+	}
+	&__email-link {
+		font-size: 16px;
+		line-height: 175%;
+		letter-spacing: -0.05em;
+		color: #EFEFEF;
+	}
+	&__phone {
+		margin-top: 25px;
+	}
+	&__phone-link {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 175%;
+		letter-spacing: -0.05em;
+		color: #DEDCDC;
+	}
+}

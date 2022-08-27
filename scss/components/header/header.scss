@@ -9,10 +9,10 @@
 	&__logo {}
 	&__logo-img {}
 	&__menu {
-		width: 557px;
+		min-width: 557px;
 	}
-	&__tel {}
-	&__tel-link {
+	&__phone {}
+	&__phone-link {
 		font-weight: 700;
 		font-size: 20px;
 		line-height: 175%;
@@ -34,6 +34,7 @@
 		color: $cnav;
 		position: relative;
 		overflow: hidden;
+		display: fixed;
 		&::before {
 			content: '';
 			width: 100%;
@@ -41,11 +42,15 @@
 			background-color: $ctext_2;
 			position: absolute;
 			bottom: 0;
-			left: -100%;
-			transition: all 0.4s ease-in-out;
+			left: 0;
+			transform: scaleX(0);
+			transition: all 0.3s ease-in-out;
 		}
 		&:hover::before {
-			left: 0;
+			transform: scaleX(1);
+		}
+		&:hover {
+			font-weight: 600;
 		}
 	}
 }
